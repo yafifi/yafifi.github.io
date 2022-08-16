@@ -1,4 +1,12 @@
 body {
-    text-color: white;
-    background-color: blue;
+    color: #F3F0E1;
+    background-color: #0E3242;
 }
+
+.message {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    font-family: times;
+  }
