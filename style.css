@@ -1,12 +1,154 @@
-body {
-    color: #F3F0E1;
-    background-color: #0E3242;
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
-.message {
-    text-align: center;
+body {
+    color: white;
+}
+
+.intro-text {
+    width: 620px;
+    height: 206px;
+    padding-left: 170px;
+    padding-top: 160px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+}
+
+h3 {
+    width: 800px;
+    height: 206px;
+    padding-left: 170px;
+    padding-top: 30px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.link-style {
+    color: #CD6113;
+    font-weight: 400;
+}
+
+.colored-name {
+     color: #1434A4;
+}
+
+.colored-text {
+    color: #E8D743;
+}
+
+.background-image {
+    background-image: url("img/background.png");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+/* YASMIN AFIFI */
+.name{
+position: relative;
+width: 362px;
+height: 76px;
+left: 61px;
+top: 0px;
+
+font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+
+color: #1434A4;
+}
+
+/* Side Nav Tabs
+navbar {
+position: absolute;
+width: 123px;
+height: 185.01px;
+left: 82px;
+top: 185px;
+
+color: #000000;
+}
+
+side-nav {
+    text-align: left;
+} */
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 180px;
+    left: 61px;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style for sidenav links and dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    border: none;
+    background: none;
     width: 100%;
-    height: 50%;
-    box-sizing: border-box;
-    font-family: times;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    text-decoration: underline;
+}
+.dropdown-container:hover{
+    color: #1434A4;
+}
+
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
   }
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+  }
+
+/* Dropdown container (hidden by default). Optional: add a lighter 
+background color and some left padding to change the design of the 
+dropdown content */
+.dropdown-container {
+    display: none;
+    /* background-color: #262626; */
+    padding-left: 8px;
+  }
+
+/* Optional: Style the caret down icon
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+} */
